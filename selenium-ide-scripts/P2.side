@@ -1,0 +1,161 @@
+{
+  "id": "87ab2bbb-49a2-47fe-a27c-4add9067f73c",
+  "version": "2.0",
+  "name": "P1",
+  "url": "https://www.selenium.dev",
+  "tests": [{
+    "id": "d26ac4e1-c915-40ce-9832-2dbe9f4e7f16",
+    "name": "T1",
+    "commands": [{
+      "id": "e8184190-2cba-48a1-aef8-af80152d0bbe",
+      "comment": "",
+      "command": "open",
+      "target": "/selenium-ide/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01f3ab27-0efe-4ba1-b6d7-a54ee95a9946",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "9d98f7ce-6579-42dd-a6ac-7ab568a09c29",
+      "comment": "",
+      "command": "if",
+      "target": "${title}!=\"Selenium___\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42bd54fa-873b-4240-b334-6d01f48f73ac",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/selenium-ide1/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfea7b79-cc6a-4c19-97e0-b9c3b01739cc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f85e4adb-cbac-4208-8eb4-e989d7a3da8f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e60fd70-832a-4248-87fb-95a346cded3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Docs",
+      "targets": [
+        ["linkText=Docs", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Docs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium-ide/docs/en/introduction/getting-started')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Docs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bd10901-e459-4c3a-bd28-dbf73357ca7c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Getting Started · Selenium IDE",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3951176a-3fd1-4201-b26a-2361177d0ddf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f74e51d6-a249-40a7-a317-b6f7f3421a36",
+    "name": "T2",
+    "commands": [{
+      "id": "b4d09e44-63a2-48b6-ba4b-9ebd02eb143b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c268d25c-9756-403c-815d-bab692eadc9b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df277d79-0a05-48da-9f05-3603539ed875",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selenium-ide > .pl-3",
+      "targets": [
+        ["css=.selenium-ide > .pl-3", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "920dfa2c-a29a-4723-9674-6bb631eb604a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Help",
+      "targets": [
+        ["linkText=Help", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Help')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium-ide/help')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Help')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2bd2178-a015-4816-9a27-4a4bbfbea8af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.docMainWrapper",
+      "targets": [
+        ["css=.docMainWrapper", "css:finder"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c6ac4c1-f265-4855-a2c1-8a49c5ba9827",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Need help?')]", "xpath:innerText"]
+      ],
+      "value": "Need help?"
+    }, {
+      "id": "25ff5438-468b-4a9b-a767-eda697f74971",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fd1a67fb-b8a2-4e2e-9b9b-18a88ae9b39e",
+    "name": "Suite1",
+    "persistSession": false,
+    "parallel": true,
+    "timeout": 300,
+    "tests": ["d26ac4e1-c915-40ce-9832-2dbe9f4e7f16", "f74e51d6-a249-40a7-a317-b6f7f3421a36"]
+  }],
+  "urls": ["https://www.selenium.dev/"],
+  "plugins": []
+}
