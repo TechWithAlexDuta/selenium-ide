@@ -1,0 +1,7 @@
+## Ignore Visual Studio files
+
+**/[Pp]ackages/*
+bin/
+obj/
+.vs/
+*.opt
