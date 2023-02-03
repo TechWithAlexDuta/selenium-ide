@@ -5,3 +5,11 @@ bin/
 obj/
 .vs/
 *.opt
+*.log
+
+## Ignore IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+log/
+target/
