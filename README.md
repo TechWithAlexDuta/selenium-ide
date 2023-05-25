@@ -1,2 +1,5 @@
 # selenium-ide
-Selenium IDE tutorial: https://www.youtube.com/@automation100
+Selenium IDE tutorials
+
+## Selenium IDE tutorial
+https://www.youtube.com/@TechWithAlexD
